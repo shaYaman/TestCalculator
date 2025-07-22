@@ -14,3 +14,15 @@ Due to cypress limitation the test files are under:<br>
 2. Running the test:
 
 `npx cypress run`
+<br>
+
+| **#** | **Test Name**                     | **Test Description**                                                           | **Test Category**           |
+| ----: | --------------------------------- | ------------------------------------------------------------------------------ | --------------------------- |
+|     1 | All Digits Display                | Verifies all digit buttons (0–9) update expression and result                  | UI Functionality / Digits   |
+|     2 | Addition with Clear Midway        | Verifies clear (`AC`) resets calculator mid-operation, then performs 2 + 7 = 9 | UI + Arithmetic             |
+|     3 | Subtraction: 9 − 6 = 3            | Basic subtraction using unique digits                                          | Arithmetic - Subtraction    |
+|     4 | Multiplication: 3 × 4 = 12        | Basic multiplication using unique digits                                       | Arithmetic - Multiplication |
+|     5 | Division: 8 ÷ 5 = 1.6             | Basic division using unique digits                                             | Arithmetic - Division       |
+|     6 | Percentage: 33% of 1,000,000      | Uses `btn-percent` to calculate 33%                                            | Arithmetic - Percentage     |
+|     7 | Negative Subtraction: -999−999    | Uses `btn-plus-minus` to handle negative numbers                               | Arithmetic - Negative       |
+|     8 | Decimal Addition: 1.5 + 2.3 = 3.8 | Verifies decimal support using `btn-decimal`                                   | Arithmetic - Decimal        |
