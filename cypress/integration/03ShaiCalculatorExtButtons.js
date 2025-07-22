@@ -1,6 +1,6 @@
 // This test will verify the extended buttons are working as expected.
 //
-describe('Calculator - Core Functionality', () => {
+describe('Calculator - Core Functionality2', () => {
 
   beforeEach(() => {
     cy.visit('http://localhost:5173/');
@@ -60,7 +60,7 @@ describe('Calculator - Core Functionality', () => {
     cy.get('#btn-2').click();
     cy.get('#btn-decimal').click();
     cy.get('#btn-3').click(); // 2.3
-//    cy.get('#expression').should('have.text', '1.5+2.3');     BUG!!
+//    cy.get('#expression').should('have.text', '1.5 + 2.3');     BUG!!
 
     cy.get('#btn-equals').click();
     cy.get('#result').should('have.text', '3.8');
