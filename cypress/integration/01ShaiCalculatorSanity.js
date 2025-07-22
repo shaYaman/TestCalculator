@@ -11,4 +11,12 @@ describe('Calculator - Sanity Test', () => {
 
     cy.get('[id="result"]').should('have.text', '2');
   });
+
+  it('should display all digits when clicked (0–9)', () => {
+    const digits = [1,2,3,4,5,6,7,8,9,0];
+    digits.forEach(digit => {
+      cy.get(`#btn-${digit}`).click();
+    });
+    cy.get('#result').should('have.text', '1234567890');
+  });
 });
