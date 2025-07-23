@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "cypress": "^9.7.0"
+  },
+  "scripts": {
+    "noPerf": "npx cypress run --spec \"cypress/integration/01*.js,cypress/integration/02*.js,cypress/integration/03*.js,cypress/integration/04*.js\""
   }
 }

@@ -14,6 +14,9 @@ Due to cypress limitation the test files are under:<br>
 2. Running the test suit:
 
 `npx cypress run`
+
+If you want to run without Performance test, you can run this:
+`npm run noPerf`
 <br><br>
 3. Tests Summery:
 
